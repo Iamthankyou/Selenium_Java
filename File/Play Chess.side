@@ -1,0 +1,120 @@
+{
+  "id": "b9ff9293-79a7-4f40-a798-b728a65e9c00",
+  "version": "2.0",
+  "name": "Play Chess",
+  "url": "https://www.chess.com",
+  "tests": [{
+    "id": "aab0aae9-7af8-4dd2-9a1f-92820848f334",
+    "name": "Untitled",
+    "commands": [{
+      "id": "7b454a38-292d-492b-9e87-4bf6e9abe627",
+      "comment": "",
+      "command": "open",
+      "target": "/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bb1fe3e-1f7f-43e0-9916-6eecf3415421",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69ef6e66-297a-4690-bf55-bd55e3829e60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.home-hand",
+      "targets": [
+        ["css=.home-hand", "css:finder"],
+        ["xpath=//a[@id='quick-link-new_game']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1eb63b7-ee79-48d7-9d97-444626df53c7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.v-board-popover:nth-child(1) > .archived-games-user-cell > .archived-games-background-link",
+      "targets": [
+        ["css=.v-board-popover:nth-child(1) > .archived-games-user-cell > .archived-games-background-link", "css:finder"],
+        ["xpath=//div[@id='vue-instance']/div[8]/div/div/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/game/live/24667943435')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7a0439f-ac18-4167-b06d-24aaec24639a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.v-board-popover:nth-child(1) > .archived-games-user-cell > .archived-games-background-link",
+      "targets": [
+        ["css=.v-board-popover:nth-child(1) > .archived-games-user-cell > .archived-games-background-link", "css:finder"],
+        ["xpath=//div[@id='vue-instance']/div[8]/div/div/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/game/live/24667943435')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f51e5b79-3412-4484-af72-3d1805482a1e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=quick-link-new_game",
+      "targets": [
+        ["id=quick-link-new_game", "id"],
+        ["linkText=New Game", "linkText"],
+        ["css=#quick-link-new_game", "css:finder"],
+        ["xpath=//a[@id='quick-link-new_game']", "xpath:attributes"],
+        ["xpath=//div[@id='vue-instance']/div[5]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.chess.com/play/online')]", "xpath:href"],
+        ["xpath=//div[5]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Game')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea917e96-6cee-44bc-a3ab-f56a37592569",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,456)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66547c54-e47d-4649-ba0c-58d4d4a6b5db",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,885)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ce50491-b6a8-42c1-8a0b-0e51f19403b1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dedcd232-99fb-4894-adca-3175b337ede4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui_v5-button-primary",
+      "targets": [
+        ["css=.ui_v5-button-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//div[@id='board-layout-sidebar']/div/div[2]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Play')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e0cd96e4-ff1b-43ab-ba20-3752c6bc981b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aab0aae9-7af8-4dd2-9a1f-92820848f334"]
+  }],
+  "urls": ["https://www.chess.com/"],
+  "plugins": []
+}
